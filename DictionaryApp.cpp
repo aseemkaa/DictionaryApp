@@ -184,8 +184,6 @@ public:
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
-
 	Dictionary arr;
 	Word doit;
 	arr.Add(Word("computer", "kompyuter"));
@@ -196,7 +194,6 @@ int main()
 
 	string word, translation;
 	int choice;
-
 
 	while (true)
 	{
