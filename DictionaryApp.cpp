@@ -147,10 +147,6 @@ public:
 		}
 	}
 
-	int GetSize() {
-		return size;
-	}
-
 	void Sort() {
 		for (int i = 0; i < size - 1; i++) {
 			for (int j = 0; j < size - i - 1; j++) {
@@ -161,14 +157,6 @@ public:
 				}
 			}
 		}
-	}
-
-	Word& operator[](int index) {
-		if (index >= size) {
-			throw out_of_range("Index is out of range");
-		}
-
-		return arr[index];
 	}
 
 	int countLetters(string word) {
